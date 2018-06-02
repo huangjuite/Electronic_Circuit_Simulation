@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ECSsystem</class>
+ <widget class="QMainWindow" name="ECSsystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1110</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ECSsystem</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="3">
+       <widget class="QPushButton" name="resistorButton">
+        <property name="styleSheet">
+         <string notr="true">#resistorButton {
+background-color: white;
+border-image: url(:resistor.png);
+border: none;
+}
+#resistorButton:pressed{
+background-color: rgb(152, 204, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="inductorButton">
+        <property name="styleSheet">
+         <string notr="true">#inductorButton {
+background-color: white;
+border-image: url(:inductor.png);
+border: none;
+}
+#inductorButton:pressed
+{
+background-color: rgb(152, 204, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QPushButton" name="capacitorButton">
+        <property name="styleSheet">
+         <string notr="true">#capacitorButton {
+background-color: white;
+border-image: url(:capacitor.png);
+border: none;
+}
+#capacitorButton:pressed
+{
+background-color: rgb(152, 204, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="vsourceButton">
+        <property name="styleSheet">
+         <string notr="true">#vsourceButton {
+background-color: white;
+border-image: url(:vsource.png);
+border: none;
+}
+#vsourceButton:pressed
+{
+background-color: rgb(152, 204, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="OpenScopeButton">
+        <property name="text">
+         <string>OpenScope</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="clearButton">
+        <property name="text">
+         <string>clear all</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="groundButton">
+        <property name="text">
+         <string>ground</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <widget class="workspace" name="workspaceView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1110</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuComponent">
+    <property name="title">
+     <string>Component</string>
+    </property>
+   </widget>
+   <addaction name="menuComponent"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>workspace</class>
+   <extends>QGraphicsView</extends>
+   <header>workspace.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

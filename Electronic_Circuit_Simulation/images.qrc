@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resistor.png</file>
+        <file>capacitor.png</file>
+        <file>inductor.png</file>
+        <file>vsource.png</file>
+        <file>ground.png</file>
+    </qresource>
+</RCC>
