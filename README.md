@@ -13,4 +13,4 @@ step2:
     INCLUDEPATH += "your absolute path of eigen folder" /eigen
 
 step3:
-  run qumake
+  run qmake
